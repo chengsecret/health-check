@@ -1,0 +1,56 @@
+<!--pages/selfset/selfset.wxml-->
+<view class="b_main">
+  <view class="b_contain">
+    <view class="b_form">
+
+      <!-- 姓名 -->
+      <view class="b_bar">
+        <view class="b_name">姓名</view>
+      </view>
+      <view class="b_place">
+        <view class="b_plecebox">
+          <input
+            disabled="{{!shouldUpdate}}"
+            maxlength="20"
+            placeholder="请输入您的姓名"
+            model:value="{{name}}"
+            bindinput="getName"
+          />
+        </view>
+      </view>
+      <!-- 学号 -->
+      <view class="b_bar">
+        <view class="b_name">学号</view>
+      </view>
+      <view class="b_place">
+        <view class="b_plecebox">
+          <input
+            disabled="{{!shouldUpdate}}"
+            maxlength="20"
+            placeholder="请输入您的学号"
+            model:value="{{num}}"
+            bindinput="getNum"
+          />
+        </view>
+      </view>
+      <!-- 班级 -->
+      <view class="b_bar">
+        <view class="b_name">班级</view>
+      </view>
+      <view class="b_place">
+        <view class="b_plecebox">
+          <view class="section">
+            <picker disabled="{{!shouldUpdate}}" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">
+                {{array[index]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <view wx:if="{{shouldUpdate}}" class="b_publish" bindtap="save">保存</view>
+    <view wx:else class="b_publish" style="background: -webkit-linear-gradient(left,rgb(212, 48, 48),rgb(161, 17, 17));" bindtap="update">修改</view>
+  </view> 
+</view>

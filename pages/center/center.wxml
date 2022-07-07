@@ -1,0 +1,106 @@
+<view>
+  <view class="top">
+    <view class="center">
+
+      <view class="center_top">
+        <block wx:if="{{!hasUserInfo}}">
+          <button  wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+          <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        </block>
+        <block wx:else>
+          <image class="center_img" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="center_info">{{userInfo.nickName}}</text>
+        </block> 
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<!--通行码-->
+<navigator url="/pages/passPict/passPict" hover-class="navigator-hover">
+  <view class='function'>
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/pict.png"></image>
+        </view>
+        <view class="text">通行码</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/jiantou.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</navigator>
+<!--间隔灰横条-->
+<view class="graydivide"></view>
+<!--打卡记录-->
+<navigator url="/pages/record/record" hover-class="navigator-hover">
+  <view class='function'>
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/record.png"></image>
+        </view>
+        <view class="text">打卡记录</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/jiantou.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</navigator>
+<!--间隔灰横条-->
+<view class="graydivide"></view>
+<!--绿码申请-->
+<navigator url="/pages/apply/apply" hover-class="navigator-hover">
+  <view class='function'>
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/request.png"></image>
+        </view>
+        <view class="text">绿码申请</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/jiantou.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</navigator>
+<!--间隔灰横条-->
+<view class="graydivide"></view>
+<!--个人设置-->
+<navigator url="/pages/selfset/selfset" hover-class="navigator-hover">
+  <view class='function'>
+    <view style="width:100%">
+      <view class="functioninformation">
+        <!--左边图片&文字-->
+        <view class="left-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/selfset.png"></image>
+        </view>
+        <view class="text">个人设置</view>
+        <!--文字-->
+        <view class="right-icon">
+          <!--图片-->
+          <image class="icon-picture" src="../../images/jiantou.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</navigator>
+

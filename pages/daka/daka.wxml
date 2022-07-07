@@ -1,0 +1,35 @@
+<!--pages/daka/daka.wxml-->
+<image class="background" src="/images/background.png"></image>
+<!-- <view class="remind">请于5:00~21:00间进行打卡 </view> -->
+<view class="daka_main">
+  <view class="daka_container">
+    <view class="b_bar">
+      <view class="word">位置</view>
+      <button wx:if="{{latitude === 9999}}" bindtap="getLocation" size="mini" type="primary" class="btn">点击获取</button>
+      <view wx:else class="location">{{longitude}},{{latitude}} </view>
+    </view>
+    <!--间隔灰横条-->
+    <view class="graydivide"></view>
+
+    <view class="b_bar">
+    <view class="text">浙江健康码颜色</view>
+    <picker bindchange="bindzjpictureChange" value="{{zjpicture}}" range="{{pictureArray}}">
+      <image wx:if="{{zjpicture === -1}}" class="picker icon-picture" src="../../images/jiantou.png"></image>
+      <view wx:else class="zjpicture">{{pictureArray[zjpicture]}}</view>
+    </picker>
+    </view>
+    <!--间隔灰横条-->
+    <view class="graydivide2"></view>
+
+    <view class="b_bar">
+    <view class="text">健康状况</view>
+    <picker bindchange="bindStateChange" value="{{state}}" range="{{stateArray}}">
+      <image wx:if="{{state === -1}}" class="picker icon-picture" src="../../images/jiantou.png"></image>
+      <view wx:else class="zjpicture">{{stateArray[state]}}</view>
+    </picker>
+    </view>
+
+    <view wx:if="{{!hasDaka}}" class="checkIn" bindtap="check">签到</view>
+    <view wx:else class="checkIn" bindtap="hasCheck" >今日已打卡</view>
+  </view>
+</view>

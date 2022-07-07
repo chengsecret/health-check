@@ -1,0 +1,77 @@
+/* pages/selfset/selfset.wxss */
+.b_main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.b_contain {
+  width: 90%;
+  padding: 32rpx;
+  margin-top: 120rpx;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-radius: 25rpx;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 10rpx 20rpx;
+}
+
+.b_form {
+  width: 100%;
+  padding: 40rpx 30rpx;
+  display: flex;
+  border-radius: 18rpx;
+  flex-direction: column;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.b_publish {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(left,rgb(48, 212, 177),rgb(52, 196, 107));
+  /* background-color: rgb(20, 211, 77); */
+  color: #fff;
+  border-radius: 40rpx;
+  letter-spacing: 4rpx;
+  font-size: 32rpx;
+  border: none;
+  font-weight: 500;
+}
+
+.b_bar {
+  height: 90rpx;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b_name {
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+}
+
+.b_place {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.b_plecebox {
+  width: 100%;
+  height: 80rpx;
+  padding: 0 20rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgb(238, 238, 238);
+}

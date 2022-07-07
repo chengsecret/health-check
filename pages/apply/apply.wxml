@@ -1,0 +1,31 @@
+<!--pages/apply/apply.wxml-->
+<view class="b_main" >
+  <view wx:if="{{!isCheck}}" style="margin-top: 40%;">您的申请正在审核中</view>
+  <view class="b_contain" wx:elif="{{color !== 1}}"> 
+    <view class="b_form" >
+      <view class="text">当前通行码颜色：<view class="value">{{colorArray[color]}}</view></view>
+      <view class="text">原因：<view class="value">{{reasonArray[reason]}}</view></view>
+      <view class="graydivide"></view>
+      <!-- 上传大数据行程卡 -->
+      <view bindtap="uploadTrip" class="form">
+        <view class="upload">上传大数据行程卡(必填)：</view>
+        <view class="images">
+          <view wx-if="{{tripFilePath===''}}" class="word" >点击上传图片</view>
+          <image wx:else src="{{tripFilePath}}" class="upimg" mode="aspectFit"></image>
+        </view>
+      </view>
+      <!-- 上传核酸检测报告 -->
+      <view bindtap="uploadReport">
+        <view class="upload">上传核酸检测报告（红、黄码必填）：</view>
+        <view class="images">
+          <view wx-if="{{reportFilePath===''}}" class="word" >点击上传图片</view>
+          <image wx:else src="{{reportFilePath}}" class="upimg" mode="aspectFit"></image>
+        </view>
+      </view>
+    </view>
+    <view  class="b_publish" bindtap="send">发送申请</view>
+  </view>
+  <view wx:else style="margin-top: 40%;">当前通行码已为绿码，无需申请</view>
+</view>
+
+

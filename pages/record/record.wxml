@@ -1,0 +1,70 @@
+<!--pages/record/record.wxml-->
+<!-- 打卡日历页面 -->
+<view class="continuouspunching_style">
+
+
+<!--累计打卡次数-->
+<view class="clockfrequency_view_style">
+  <view class="daka_info">
+    <view class="daka_tiansu">
+      <text class="daka_number_style">{{count}}</text>天</view>
+    <view class="daka_jiesao">累计打卡</view>
+  </view>
+  <view class="daka_info">
+    <view class="daka_tiansu">
+      <text class="daka_number_style">{{continuous_daka_count}}</text>天</view>
+    <view class="daka_jiesao">连续打卡</view>
+  </view>
+</view>
+<!--累计打卡次数end-->
+
+
+
+<!--日历-->
+<view class='all'>
+  <view class="bar">
+
+    <!-- 显示年月 -->
+    <view class="date">
+      <view class="sanjiao" bindtap="handleCalendar" data-handle="prev"></view>{{cur_year || "--"}} 年 {{cur_month || "--"}} 月
+      <view class="you_sanjiao" bindtap="handleCalendar" data-handle="next"></view>
+    </view>
+
+  </view>
+  <!-- 显示星期 -->
+  <view class="week">
+    <view wx:for="{{weeks_ch}}" wx:key="index" data-idx="{{index}}">{{item}}</view>
+  </view>
+
+  <view class='days'>
+    <!-- 列 -->
+    <view class="columns" wx:for="{{days.length/7}}" wx:for-index="i" wx:key="i">
+      <view wx:for="{{days}}" wx:for-index="j" wx:key="j">
+        <!-- 行 -->
+        <view class="rows" wx:if="{{j/7 == i}}">
+          <view class="rows" wx:for="{{7}}" wx:for-index="k" wx:key="k">
+            <!-- 每个月份的空的单元格 -->
+            <view class='cell' wx:if="{{days[j+k].date == null}}">
+              <text decode="{{true}}">&nbsp;&nbsp;</text>
+            </view>
+            <!-- 每个月份的有数字的单元格 -->
+            <view class='cell' wx:else>
+              <!-- 当前日期已签到 -->
+              <view wx:if="{{days[j+k].isSign == true}}" style='background-color:#2681FF;  color: white;' class='cell'>
+                <text>{{days[j+k].date}}</text>
+              </view>
+              <!-- 当前日期未签到 -->
+              <view wx:else>
+                <text>{{days[j+k].date}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--日历end-->
+
+</view>
+

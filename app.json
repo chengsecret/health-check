@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/daka/daka",
+    "pages/center/center",
+    "pages/selfset/selfset",
+    "pages/record/record",
+    "pages/apply/apply",
+    "pages/passPict/passPict"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "健康打卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/daka/daka",
+        "text": "打卡",
+        "iconPath": "images/healthy2.png",
+        "selectedIconPath": "images/healthy1.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "images/me2.png",
+        "selectedIconPath": "images/me1.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectedColor": "#0286f1"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于健康打卡"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

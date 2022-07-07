@@ -1,0 +1,103 @@
+/* pages/apply/apply.wxss */
+.b_main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.b_contain {
+  width: 90%;
+  padding: 32rpx;
+  margin-top: 120rpx;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-radius: 25rpx;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 10rpx 20rpx;
+}
+
+.b_form {
+  width: 100%;
+  padding: 40rpx 30rpx;
+  display: flex;
+  border-radius: 18rpx;
+  flex-direction: column;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.text {
+  font-size: 35rpx;
+  font-style: normal;
+  font-weight: normal;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+  margin: 18rpx;
+}
+
+.word {
+  font-size: 30rpx;
+  color: rgb(88, 66, 66);
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.value {
+  /* background-color: rgb(178, 197, 250); */
+  float: right;
+}
+
+.graydivide {
+  border-bottom: 1rpx solid rgb(223, 216, 216);
+  width: 100%;
+  height: 8rpx;
+}
+
+.upload {
+  font-size: 30rpx;
+  font-style: normal;
+  font-weight: normal;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  color: #000000;
+  margin-top: 30rpx;
+}
+
+.images {
+  border: 1px solid #ccc;
+  height: 160rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 20rpx;
+  background: rgb(238, 238, 238);
+  text-align: center;
+}
+
+.upimg {
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.form {
+  margin-top: 30rpx;
+}
+
+.b_publish {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(left,rgb(48, 212, 177),rgb(52, 196, 107));
+  /* background-color: rgb(20, 211, 77); */
+  color: #fff;
+  border-radius: 40rpx;
+  letter-spacing: 4rpx;
+  font-size: 32rpx;
+  border: none;
+  font-weight: 500;
+}

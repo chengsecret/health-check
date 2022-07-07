@@ -1,0 +1,136 @@
+/* pages/daka/daka.wxss */
+.background {
+  width: 750rpx;
+  height: 330rpx;
+  z-index: 0;
+}
+/* 
+  .remind{
+    color: rgb(245, 88, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: calc(37% - 140rpx);
+    top: calc(20% - 0rpx);
+
+    z-index: 12;
+  } */
+
+.daka_main {
+  display: flex;
+  justify-content: center;
+}
+
+.daka_container {
+  width: 90%;
+  padding: 30rpx;
+  margin-top: 10rpx;
+  /* display: flex; */
+  box-sizing: border-box;
+  /* flex-direction: column; */
+  border-radius: 25rpx;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 10rpx 20rpx;
+}
+
+.word {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  width: 100px;
+  float: left;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+  margin-top: 8rpx;
+}
+
+.text {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+  width: 150px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+  margin-top: 40rpx;
+  float: left;
+}
+
+.btn{
+  float: right;
+}
+
+.location{
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  width: 150px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+  margin-top: 20rpx;
+  float: right;
+}
+
+.zjpicture{
+  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  /* width: 150px; 
+  color: #000000; */
+  margin-top: 40rpx;
+  float: right;
+}
+
+
+.b_bar {
+  height: 90rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  /* box-sizing: border-box; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.graydivide {/*灰色分割条*/
+  height: 5px;
+  background-color: #ededed;
+}
+
+.graydivide2{
+  height: 5px;
+  background-color: #ededed;
+  margin-top: 30rpx;
+}
+
+.icon-picture {/*图标*/
+  float: right;
+  width: 28px;
+  height: 28px;
+  margin-top: 40rpx;
+}
+.checkIn{
+  width: 250rpx;
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: calc(50% - 140rpx);
+  top: calc(70% - 0rpx);
+
+  z-index: 12;
+
+  border-radius: 50%;
+	background-image: linear-gradient(180deg, 
+		#00a0e9 0%, 
+		#0095e9 73%, 
+    #0089e9 100%);
+  box-shadow: 0 0 10rpx 0rpx #0089e9;
+}

@@ -1,0 +1,10 @@
+<!--pages/passPict/passPict.wxml-->
+<view bindtap="getTime" class='time'>{{time}}</view>
+<view class="main">
+  <image src="{{path}}" class="pict"></image>
+</view>
+<view class='info'>
+  <view class='text'> 姓名：{{name}} </view> 
+  <view class='text'> 学号：{{num}} </view> 
+  <view class='text'> 班级：{{classnum}} </view> 
+</view>
