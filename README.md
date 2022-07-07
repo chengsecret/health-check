@@ -19,12 +19,15 @@
 ![image](https://user-images.githubusercontent.com/51410717/177693867-b7bc2e06-d3ef-489e-b174-c9bf0a948cde.png)
 
 打卡记录页面：
+
 ![image](https://user-images.githubusercontent.com/51410717/177693901-23030765-ef2d-41a7-b2ed-f1ddd3266050.png)
 
 绿码申请页面：
+
 ![image](https://user-images.githubusercontent.com/51410717/177693940-d7c7e528-0a5d-4ff2-ab86-d77c353dde5e.png)
 
 个人设置页面：
+
 ![image](https://user-images.githubusercontent.com/51410717/177693976-5c6e3a33-54eb-45b3-a89a-51063f79bd1a.png)
 
 
